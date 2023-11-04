@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class GasOverFlowException {
+public class GasOverFlowException extends RuntimeException {
+
+	public GasOverFlowException() {
+		super("invalid gas amount to fill!");
+	}
+
 }
