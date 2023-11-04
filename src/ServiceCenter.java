@@ -79,6 +79,9 @@ public class ServiceCenter {
 					}
 					return null;
 				})
-				.forEach(this::serviceCar);
+				.forEach(car -> {
+					serviceCar(car);
+					serviceQueue.remove(car);
+				});
 	}
 }
